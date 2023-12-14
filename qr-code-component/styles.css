@@ -40,7 +40,7 @@ img {
     width: var(--288px, 288px);
     height: var(--288px, 288px);
     border-radius: 10px;
-    margin: var(--16px, 16px) var(--16px, 16px) var(--16px, 16px) var(--24px, 24px);
+    margin: var(--16px, 16px) var(--16px, 16px) var(--24px, 24px) var(--16px, 16px);
 }
 
 h1,
