@@ -1,10 +1,17 @@
 :root {
-    --blue: #2C7DFA;
-    --blue-shade: #3685FF;
+    --white: #FFFFFF;
     --dark-navy: #1F314F;
     --grey: #7D889E;
     --light-grey: #D5E1EF;
-    --white: #FFFFFF;
+    --15px: 0.9375rem;
+    --16px: 1rem;
+    --22px: 1.375rem;
+    --24px: 1.5rem;
+    --40px: 2.5rem;
+    --256px: 16rem;
+    --288px: 18rem;
+    --320px: 20rem;
+    --497px: 31.06258rem; 
 }
 
 body {
@@ -12,7 +19,7 @@ body {
     margin: 0 auto;
     background-color: var(--light-grey);
     font-family: 'Outfit', sans-serif;
-    font-size: 15px;
+    font-size: var(--15px, 15px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +29,7 @@ main {
     background-color: var(--white, #FFF);
     border-radius: 20px;
     box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
-    width: 320px;
-    height: 497px;
+    min-height: var(--497px, 497px);
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -31,8 +37,10 @@ main {
 }
 
 img {
+    width: var(--288px, 288px);
+    height: var(--288px, 288px);
     border-radius: 10px;
-    margin: 16px 16px 24px;
+    margin: var(--16px, 16px) var(--16px, 16px) var(--16px, 16px) var(--24px, 24px);
 }
 
 h1,
@@ -45,17 +53,16 @@ p {
 }
 
 h1 {
-    width: 288px;
+    width: var(--288px);
     color: var(--dark-navy, #1F314F);
-    font-size: 22px;
+    font-size: var(--22px, 22px);
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: var(--16px, 16px);
 }
 
 p {
-    width: 256px;
+    width: var(--256px, 256px);
     color: var(--grey, #7D889E);
-    font-size: 15px;
     font-weight: 400;
-    letter-spacing: 0.188px;
+    margin-bottom: var(--40px, 40px);
 }
