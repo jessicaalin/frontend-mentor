@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('./assets/fonts/./assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+    src: url('./assets/fonts/WorkSans-Regular.woff2') format('woff2'),
         url('./assets/fonts/WorkSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
