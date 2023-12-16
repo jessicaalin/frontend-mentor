@@ -114,18 +114,14 @@ details summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-details > p {
-    color: var(--pale-purple);
-    font-size: var(--14px, 14px);
-}
-
-details summary p {
-    width: var(--225px, 225px);
     color: var(--dark-purple);
     font-size: var(--16px, 16px);
     font-weight: 600;
+}
+
+details p {
+    color: var(--pale-purple);
+    font-size: var(--14px, 14px);
 }
 
 details summary::after {
@@ -175,17 +171,16 @@ details[open] summary::after {
         font-size: var(--56px, 56px);
     }
     
-    details > p {
+    details p {
         font-size: var(--16px, 16px);
     }
 
-    details summary p:hover {
+    details summary:hover {
         color: var(--purple);
         cursor: pointer;
     }
     
-    details summary p {
-        width: 100%;
+    details summary {
         font-size: var(--18px, 18px);
     }
 
