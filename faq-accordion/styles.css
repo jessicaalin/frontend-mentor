@@ -1,0 +1,142 @@
+:root {
+    --white: #FFFFFF;
+    --light-pink: #F8EEFF;
+    --purple: #AD28EB;
+    --pale-purple: #8B6990;
+    --dark-purple: #301534;
+    --14px: 0.875rem;
+    --16px: 1rem;
+    --24px: 1.5rem;
+    --30px: 1.875rem;
+    --32px: 2rem;
+    --40px: 2.5rem;
+    --225px: 14.0625rem;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/./assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('./assets/fonts/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+        url('./assets/fonts/WorkSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/WorkSans-Bold.woff2') format('woff2'),
+        url('./assets/fonts/WorkSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--light-pink);
+    min-height: 100vh;
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+details,
+summary {
+    overflow-wrap: break-word;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    position: relative;
+    top: -90px;
+    background-color: var(--white, #FFF);
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 8px;
+    margin: 0 24px 0;
+    padding: 24px;
+    box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
+}
+
+div {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--24px, 24px);
+}
+
+.star {
+    width: var(--24px, 24px);
+    height: var(--24px, 24px);
+    margin-right: 24px;
+}
+
+h1 {
+    color: var(--dark-purple);
+    font-size: var(--32px, 32px);
+    font-weight: bold;
+}
+
+details {
+    margin-bottom: var(--40px, 40px);
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+details > p {
+    color: var(--pale-purple);
+    font-size: var(--14px, 14px);
+}
+
+details summary p {
+    width: var(--225px, 225px);
+    color: var(--dark-purple);
+    font-size: var(--16px, 16px);
+    font-weight: 600;
+}
+
+details summary::after { 
+    content: url(./assets/images/icon-plus.svg);
+    width: var(--30px, 30px);
+    height: var(--30px, 30px);
+    margin-left: var(--24px, 24px);
+}
+
+details[open] summary {
+    margin-bottom: var(--24px, 24px);
+}
+
+details[open] summary::after {
+    content: url(./assets/images/icon-minus.svg);
+}
