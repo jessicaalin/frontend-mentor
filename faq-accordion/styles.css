@@ -92,7 +92,7 @@ main {
     box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
 }
 
-.heading {
+header {
     display: flex;
     align-items: center;
     margin-bottom: var(--24px, 24px);
